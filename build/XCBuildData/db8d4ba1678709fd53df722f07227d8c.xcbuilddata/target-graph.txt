@@ -1,0 +1,2 @@
+Target dependency graph (1 target)
+Target 'Meditasyon Timer' in project 'Meditasyon Timer' (no dependencies)

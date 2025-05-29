@@ -1,0 +1,40 @@
+{
+  "source": "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Timer seçin",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 43
+        }
+      },
+      {
+        "comment": "",
+        "key": "Meditasyon Timer",
+        "location": {
+          "startingColumn": 14,
+          "startingLine": 55
+        }
+      },
+      {
+        "comment": "",
+        "key": "Yeni timer ekle",
+        "location": {
+          "startingColumn": 37,
+          "startingLine": 104
+        }
+      },
+      {
+        "comment": "",
+        "key": "Yeni bir meditasyon timer'ı oluşturun",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 105
+        }
+      }
+    ]
+  },
+  "version": 1
+}

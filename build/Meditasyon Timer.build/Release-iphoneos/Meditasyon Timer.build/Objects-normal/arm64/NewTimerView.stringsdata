@@ -1,0 +1,152 @@
+{
+  "source": "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/NewTimerView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Timer Düzenle",
+        "location": {
+          "startingColumn": 55,
+          "startingLine": 87
+        }
+      },
+      {
+        "comment": "",
+        "key": "Yeni Timer",
+        "location": {
+          "startingColumn": 74,
+          "startingLine": 87
+        }
+      },
+      {
+        "comment": "",
+        "key": "İptal",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 89
+        }
+      },
+      {
+        "comment": "",
+        "key": "Kaydet",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 90
+        }
+      },
+      {
+        "comment": "",
+        "key": "Timer Adı",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 40
+        }
+      },
+      {
+        "comment": "",
+        "key": "Süre",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 45
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ses Ayarları",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 54
+        }
+      },
+      {
+        "comment": "",
+        "key": "Arka Plan Müziği",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 71
+        }
+      },
+      {
+        "comment": "",
+        "key": "Timer İsmi",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 41
+        }
+      },
+      {
+        "comment": "",
+        "key": "Alarm Sesi",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 55
+        }
+      },
+      {
+        "comment": "",
+        "key": "Alarm Yükselme",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 63
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lldsn",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 65
+        }
+      },
+      {
+        "comment": "",
+        "key": "Arka Plan Müziği Kısılsın",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 72
+        }
+      },
+      {
+        "comment": "",
+        "key": "Arka Plan Müziğini Kapat",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 84
+        }
+      },
+      {
+        "comment": "",
+        "key": "Kısılma Süresi",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 76
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lldsn",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 78
+        }
+      },
+      {
+        "comment": "",
+        "key": "",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 131
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 133
+        }
+      }
+    ]
+  },
+  "version": 1
+}

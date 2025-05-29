@@ -1,0 +1,70 @@
+{
+  "" : {
+    "const-values" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/Meditasyon Timer-master.swiftconstvalues",
+    "dependencies" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/Meditasyon Timer-master.d",
+    "diagnostics" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/Meditasyon Timer-master.dia",
+    "emit-module-dependencies" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/Meditasyon Timer-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/Meditasyon Timer-master-emit-module.dia",
+    "swift-dependencies" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/Meditasyon Timer-master.swiftdeps"
+  },
+  "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/AudioManager.swift" : {
+    "index-unit-output-path" : "/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/AudioManager.o",
+    "llvm-bc" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/AudioManager.bc",
+    "object" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/AudioManager.o"
+  },
+  "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/BackgroundTimerManager.swift" : {
+    "index-unit-output-path" : "/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/BackgroundTimerManager.o",
+    "llvm-bc" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/BackgroundTimerManager.bc",
+    "object" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/BackgroundTimerManager.o"
+  },
+  "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/CircularProgressView.swift" : {
+    "index-unit-output-path" : "/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/CircularProgressView.o",
+    "llvm-bc" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/CircularProgressView.bc",
+    "object" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/CircularProgressView.o"
+  },
+  "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/ContentView.swift" : {
+    "index-unit-output-path" : "/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/ContentView.o"
+  },
+  "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/Meditasyon_TimerApp.swift" : {
+    "index-unit-output-path" : "/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/Meditasyon_TimerApp.o",
+    "llvm-bc" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/Meditasyon_TimerApp.bc",
+    "object" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/Meditasyon_TimerApp.o"
+  },
+  "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/ModernTimerView.swift" : {
+    "index-unit-output-path" : "/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/ModernTimerView.o",
+    "llvm-bc" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/ModernTimerView.bc",
+    "object" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/ModernTimerView.o"
+  },
+  "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/NewTimerView.swift" : {
+    "index-unit-output-path" : "/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/NewTimerView.o",
+    "llvm-bc" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/NewTimerView.bc",
+    "object" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/NewTimerView.o"
+  },
+  "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/TimerControlView.swift" : {
+    "index-unit-output-path" : "/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/TimerControlView.o",
+    "llvm-bc" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/TimerControlView.bc",
+    "object" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/TimerControlView.o"
+  },
+  "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/TimerManager.swift" : {
+    "index-unit-output-path" : "/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/TimerManager.o",
+    "llvm-bc" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/TimerManager.bc",
+    "object" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/TimerManager.o"
+  },
+  "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/TimerRowView.swift" : {
+    "index-unit-output-path" : "/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/TimerRowView.o",
+    "llvm-bc" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/TimerRowView.bc",
+    "object" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/TimerRowView.o"
+  },
+  "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/TimerTemplate.swift" : {
+    "index-unit-output-path" : "/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/TimerTemplate.o",
+    "llvm-bc" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/TimerTemplate.bc",
+    "object" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/TimerTemplate.o"
+  },
+  "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  }
+}

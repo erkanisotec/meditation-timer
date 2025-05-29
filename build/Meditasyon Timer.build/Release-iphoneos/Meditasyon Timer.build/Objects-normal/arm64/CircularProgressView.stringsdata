@@ -1,0 +1,16 @@
+{
+  "source": "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/CircularProgressView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "kalan süre",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 57
+        }
+      }
+    ]
+  },
+  "version": 1
+}

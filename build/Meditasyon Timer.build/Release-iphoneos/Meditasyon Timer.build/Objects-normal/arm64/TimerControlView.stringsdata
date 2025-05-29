@@ -1,0 +1,56 @@
+{
+  "source": "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/TimerControlView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "%%%lld",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 43
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lldsn",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 48
+        }
+      },
+      {
+        "comment": "",
+        "key": "Timer'ı başlat",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 92
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ timer'ını başlatır",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 93
+        }
+      },
+      {
+        "comment": "",
+        "key": "Timer'ı durdur",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 107
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ timer'ını durdurur ve ses çalmayı keser",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 108
+        }
+      }
+    ]
+  },
+  "version": 1
+}

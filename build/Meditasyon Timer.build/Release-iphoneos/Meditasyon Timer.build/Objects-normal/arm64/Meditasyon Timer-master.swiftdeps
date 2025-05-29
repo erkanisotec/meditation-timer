@@ -1,0 +1,18 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "1b3bc5ceffaee9de0fa1aa6705882aed9465d245d1d31cae03745e084998af09"
+build_start_time: [1748546025, 764364000]
+build_end_time: [1748546027, 862164000]
+inputs:
+  "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/AudioManager.swift": [1748543712, 679311554]
+  "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/BackgroundTimerManager.swift": [1748545910, 313454173]
+  "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/CircularProgressView.swift": [1748545941, 132488933]
+  "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/ContentView.swift": [1748545260, 787660281]
+  "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/Meditasyon_TimerApp.swift": [1748543392, 191885410]
+  "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/ModernTimerView.swift": [1748545968, 493908474]
+  "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/NewTimerView.swift": [1739759249, 71891431]
+  "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/TimerControlView.swift": [1748543761, 650272894]
+  "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/TimerManager.swift": [1748544940, 442793512]
+  "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/TimerRowView.swift": [1748544964, 557417074]
+  "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/TimerTemplate.swift": [1739696492, 863406242]
+  ? "/Users/erkanozturk/Documents/Meditasyon Timer/build/Meditasyon Timer.build/Release-iphoneos/Meditasyon Timer.build/DerivedSources/GeneratedAssetSymbols.swift"
+  : [1748546008, 17610407]

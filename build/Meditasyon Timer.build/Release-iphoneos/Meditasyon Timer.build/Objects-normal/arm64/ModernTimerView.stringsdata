@@ -1,0 +1,160 @@
+{
+  "source": "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/ModernTimerView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Meditasyon Zamanı",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 31
+        }
+      },
+      {
+        "comment": "",
+        "key": "Kapat",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 59
+        }
+      },
+      {
+        "comment": "",
+        "key": "Timer'ı durdur",
+        "location": {
+          "startingColumn": 37,
+          "startingLine": 91
+        }
+      },
+      {
+        "comment": "",
+        "key": "Timer'ı başlat",
+        "location": {
+          "startingColumn": 37,
+          "startingLine": 109
+        }
+      },
+      {
+        "comment": "",
+        "key": "🧘‍♀️",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 125
+        }
+      },
+      {
+        "comment": "",
+        "key": "Meditasyon Tamamlandı",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 128
+        }
+      },
+      {
+        "comment": "",
+        "key": "Harika iş çıkardınız!",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 132
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ses",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 151
+        }
+      },
+      {
+        "comment": "",
+        "key": "%%%lld",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 154
+        }
+      },
+      {
+        "comment": "",
+        "key": "Durdur",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 160
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ekran uyku modunda değil",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 265
+        }
+      },
+      {
+        "comment": "",
+        "key": "Timer'ı duraklat",
+        "location": {
+          "startingColumn": 37,
+          "startingLine": 223
+        }
+      },
+      {
+        "comment": "",
+        "key": "Timer'ı durdur",
+        "location": {
+          "startingColumn": 37,
+          "startingLine": 235
+        }
+      },
+      {
+        "comment": "",
+        "key": "Timer'ı devam ettir",
+        "location": {
+          "startingColumn": 126,
+          "startingLine": 259
+        }
+      },
+      {
+        "comment": "",
+        "key": "Timer'ı başlat",
+        "location": {
+          "startingColumn": 151,
+          "startingLine": 259
+        }
+      },
+      {
+        "comment": "",
+        "key": "🧘‍♀️",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 281
+        }
+      },
+      {
+        "comment": "",
+        "key": "Meditasyon Tamamlandı!",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 286
+        }
+      },
+      {
+        "comment": "",
+        "key": "Harika iş çıkardınız! 🎉",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 290
+        }
+      },
+      {
+        "comment": "",
+        "key": "Tekrar Başlat",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 299
+        }
+      }
+    ]
+  },
+  "version": 1
+}

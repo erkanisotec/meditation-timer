@@ -1,0 +1,80 @@
+{
+  "source": "/Users/erkanozturk/Documents/Meditasyon Timer/Meditasyon Timer/TimerRowView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Timer'ı sil",
+        "location": {
+          "startingColumn": 37,
+          "startingLine": 17
+        }
+      },
+      {
+        "comment": "",
+        "key": "Bu timer'ı kalıcı olarak siler",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 18
+        }
+      },
+      {
+        "comment": "",
+        "key": "Timer'ı düzenle",
+        "location": {
+          "startingColumn": 37,
+          "startingLine": 24
+        }
+      },
+      {
+        "comment": "",
+        "key": "Bu timer'ın ayarlarını değiştirin",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 25
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sil",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 15
+        }
+      },
+      {
+        "comment": "",
+        "key": "Düzenle",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 21
+        }
+      },
+      {
+        "comment": "",
+        "key": "Timer adı: %@",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 48
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld%@",
+        "location": {
+          "startingColumn": 14,
+          "startingLine": 103
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld %@",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 106
+        }
+      }
+    ]
+  },
+  "version": 1
+}
