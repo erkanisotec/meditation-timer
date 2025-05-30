@@ -2,13 +2,12 @@ import SwiftUI
 
 struct ModernTimerView: View {
     let template: TimerTemplate
-    @ObservedObject var timerManager: TimerManager
-    @StateObject private var backgroundTimer = BackgroundTimerManager()
+    @ObservedObject var backgroundTimer: BackgroundTimerManager
     @Environment(\.dismiss) var dismiss
     @Environment(\.scenePhase) private var scenePhase
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 // Background gradient
                 LinearGradient(
@@ -55,19 +54,13 @@ struct ModernTimerView: View {
                             ModernTimerControlButtons(template: template, backgroundTimer: backgroundTimer)
                         }
                         
-                        // Close Button
-                        Button("Kapat") {
-                            backgroundTimer.stopTimer()
-                            dismiss()
-                        }
-                        .font(.body)
-                        .foregroundColor(.secondary)
                     }
                     .padding(.bottom, 30)
                 }
             }
         }
         .navigationBarHidden(true)
+        .interactiveDismissDisabled(false)
     }
 }
 
@@ -317,6 +310,6 @@ struct CompletedTimerView: View {
 #Preview {
     ModernTimerView(
         template: TimerTemplate(name: "Sabah Meditasyonu", duration: 600),
-        timerManager: TimerManager()
+        backgroundTimer: BackgroundTimerManager()
     )
 }

@@ -29,6 +29,16 @@ class TimerManager: ObservableObject {
                 UIApplication.shared.endBackgroundTask(taskID)
             }
         }
+        
+        // Clear app badge
+        BadgeManager.clearBadge()
+        
+        // Remove all pending notifications
+        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
+        UNUserNotificationCenter.current().removeAllDeliveredNotifications()
+        
+        // Remove notification observers
+        NotificationCenter.default.removeObserver(self)
     }
     
     init() {
@@ -99,6 +109,11 @@ class TimerManager: ObservableObject {
         
         // Cancel scheduled notifications
         cancelTimerNotification(for: id)
+        
+        // Clear badge if no active timers
+        if activeTimers.isEmpty {
+            BadgeManager.clearBadge()
+        }
     }
     
     private func updateTimer(id: UUID) {
@@ -292,5 +307,7 @@ class TimerManager: ObservableObject {
             withIdentifiers: ["timer-\(id.uuidString)"]
         )
         
+        // Clear badge when canceling notification
+        BadgeManager.clearBadge()
     }
 } 

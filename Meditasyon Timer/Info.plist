@@ -6,6 +6,11 @@
 	<array>
 		<string>audio</string>
 		<string>processing</string>
+		<string>background-app-refresh</string>
 	</array>
+	<key>NSUserNotificationsUsageDescription</key>
+	<string>Meditasyon süreniz tamamlandığında bildirim almak için izin gereklidir.</string>
+	<key>UISupportsDocumentBrowser</key>
+	<false/>
 </dict>
 </plist>

@@ -28,10 +28,20 @@ class BackgroundTimerManager: ObservableObject {
     }
     
     deinit {
+        // Safe cleanup
+        displayTimer?.invalidate()
+        displayTimer = nil
+        
+        // Stop background audio safely
+        SilentBackgroundAudioManager.shared.stopBackgroundAudio()
+        
+        // Remove observers
         NotificationCenter.default.removeObserver(self)
-        stopTimer()
+        
         // Always restore screen sleep when timer manager is deallocated
-        UIApplication.shared.isIdleTimerDisabled = false
+        DispatchQueue.main.async {
+            UIApplication.shared.isIdleTimerDisabled = false
+        }
     }
     
     // MARK: - Timer Control
@@ -48,8 +58,8 @@ class BackgroundTimerManager: ObservableObject {
         // Prevent screen sleep during meditation
         preventScreenSleep = true
         
-        // Schedule completion notification
-        scheduleCompletionNotification(duration: duration, timerName: timerName)
+        // Start silent background audio for lock screen visibility (like YouTube)
+        SilentBackgroundAudioManager.shared.startBackgroundAudio(timerName: timerName, duration: duration)
         
         // Start display update timer
         startDisplayTimer()
@@ -58,40 +68,52 @@ class BackgroundTimerManager: ObservableObject {
     
     func stopTimer() {
         isActive = false
-        timerStartDate = nil
-        backgroundEnterTime = nil
         displayTimer?.invalidate()
         displayTimer = nil
+        
+        // Reset timer state for fresh start
+        timerStartDate = nil
+        backgroundEnterTime = nil
+        timeRemaining = 0
+        progress = 0
         
         // Re-enable screen sleep
         preventScreenSleep = false
         
-        // Cancel pending notifications
-        cancelNotifications()
+        // Stop silent background audio
+        SilentBackgroundAudioManager.shared.stopBackgroundAudio()
         
+        // Clear app badge
+        BadgeManager.clearBadge()
     }
     
     func pauseTimer() {
-        if isActive {
-            isActive = false
-            displayTimer?.invalidate()
-            displayTimer = nil
-            
-            // Allow screen sleep when paused
-            preventScreenSleep = false
-            
-        }
+        guard isActive else { return }
+        
+        isActive = false
+        displayTimer?.invalidate()
+        displayTimer = nil
+        
+        // Allow screen sleep when paused
+        preventScreenSleep = false
+        
+        // Pause silent background audio
+        SilentBackgroundAudioManager.shared.pauseBackgroundAudio()
+        print("Timer paused")
     }
     
     func resumeTimer() {
-        if !isActive && timerStartDate != nil {
-            isActive = true
-            startDisplayTimer()
-            
-            // Prevent screen sleep when resumed
-            preventScreenSleep = true
-            
-        }
+        guard !isActive && timerStartDate != nil && timeRemaining > 0 else { return }
+        
+        isActive = true
+        startDisplayTimer()
+        
+        // Prevent screen sleep when resumed
+        preventScreenSleep = true
+        
+        // Resume silent background audio
+        SilentBackgroundAudioManager.shared.resumeBackgroundAudio()
+        print("Timer resumed")
     }
     
     // MARK: - Display Timer
@@ -108,10 +130,13 @@ class BackgroundTimerManager: ObservableObject {
         
         let elapsed = Date().timeIntervalSince(startDate)
         let remaining = max(0, totalDuration - elapsed)
+        let progressValue = elapsed / totalDuration
         
         DispatchQueue.main.async {
             self.timeRemaining = remaining
-            self.progress = elapsed / self.totalDuration
+            self.progress = progressValue
+            
+            // No manual updates needed - silent audio manager handles this automatically
             
             if remaining <= 0 {
                 self.timerCompleted()
@@ -120,8 +145,17 @@ class BackgroundTimerManager: ObservableObject {
     }
     
     private func timerCompleted() {
+        // Mark as completed first
+        DispatchQueue.main.async {
+            self.isActive = false
+            self.timeRemaining = 0
+            self.progress = 1.0
+        }
         
-        stopTimer()
+        // Safe stop with delay to allow UI updates
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            self.stopTimer()
+        }
         
         // Show completion notification if app is in background
         if isAppInBackground {
@@ -176,6 +210,8 @@ class BackgroundTimerManager: ObservableObject {
                 self.startDisplayTimer()
                 // Re-enable screen sleep prevention if timer is still running
                 self.preventScreenSleep = true
+                
+                // Silent audio manager automatically updates lock screen info
             }
         }
         
@@ -199,44 +235,16 @@ class BackgroundTimerManager: ObservableObject {
     }
     
     private func scheduleCompletionNotification(duration: TimeInterval, timerName: String) {
-        let content = UNMutableNotificationContent()
-        content.title = "🧘‍♀️ Meditasyon Tamamlandı"
-        content.body = "\(timerName) meditasyonunuz başarıyla tamamlandı!"
-        content.sound = .default
-        content.badge = 1
-        
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: duration, repeats: false)
-        let request = UNNotificationRequest(
-            identifier: "meditation-timer-completion",
-            content: content,
-            trigger: trigger
-        )
-        
-        UNUserNotificationCenter.current().add(request) { _ in
-            // Notification scheduled silently
-        }
+        // No notifications will be sent - silent operation only
     }
     
     private func showLocalCompletionNotification() {
-        let content = UNMutableNotificationContent()
-        content.title = "🧘‍♀️ Meditasyon Tamamlandı"
-        content.body = "Meditasyonunuz başarıyla tamamlandı! Harika iş çıkardınız."
-        content.sound = .default
-        content.badge = 1
-        
-        let request = UNNotificationRequest(
-            identifier: "meditation-timer-local-completion",
-            content: content,
-            trigger: nil // Immediate notification
-        )
-        
-        UNUserNotificationCenter.current().add(request)
+        // No notifications will be sent - silent operation only
     }
     
     private func cancelNotifications() {
-        UNUserNotificationCenter.current().removePendingNotificationRequests(
-            withIdentifiers: ["meditation-timer-completion", "meditation-timer-local-completion"]
-        )
+        // No notifications to cancel - silent operation only
+        BadgeManager.clearBadge()
     }
     
     // MARK: - Utility
